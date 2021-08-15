@@ -1,0 +1,24 @@
+<mat-toolbar style="background-color: black;"class="mat-elevation-z5">
+<mat-toolbar-row style="color:cornsilk">
+  <span>Project report</span>
+  <span class="example-spacer"></span>
+  <button mat-button><mat-icon class="example-icon" aria-hidden="true">favorite</mat-icon></button>
+  <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
+</mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened >
+  <mat-nav-list style="width:200px">
+    <a mat-list-item routerLink='Segment' style="height: 60px;"><mat-icon>dashboard</mat-icon>Dashboard</a>
+    <a mat-list-item style="height: 60px;"><mat-icon>dashboard</mat-icon>Project Metrics</a>
+    <a mat-list-item style="height: 60px;"><mat-icon>dashboard</mat-icon>Attendance Tracker</a>
+    <a mat-list-item style="height: 60px;"><mat-icon>dashboard</mat-icon>Master Tracker</a>
+
+  </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <p style="height:100vh"></p>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
